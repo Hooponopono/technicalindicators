@@ -1,0 +1,45 @@
+{
+  "name": "technicalindicators",
+  "version": "0.1.1",
+  "description": "Technical Indicators written in javascript",
+  "main": "dist/index.js",
+  "module": "lib/index.js",
+  "types": "./declarations/index.d.ts",
+  "scripts": {
+    "generateDts": "./generateTsDefinitions.sh",
+    "build": "tsc -p . && babel-node --presets es2015 rollup.js",
+    "start": "sh test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hooponopono/technicalindicators.git"
+  },
+  "author": "",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Hooponopono/technicalindicators.git"
+  },
+  "homepage": "https://github.com/Hooponopono/technicalindicators#readme",
+  "devDependencies": {
+    "@types/node": "*",
+    "ts-node": "*",
+    "tslint": "*",
+    "typescript": "*"
+  },
+  "dependencies": {
+    "@babel/core": "*",
+    "@types/node": "*",
+    "babel": "*",
+    "babel-cli": "*",
+    "babel-preset-es2015": "*",
+    "dts-bundle": "*",
+    "rollup": "*",
+    "rollup-plugin-babel": "*",
+    "rollup-plugin-babel-minify": "*",
+    "rollup-plugin-commonjs": "*",
+    "rollup-plugin-node-builtins": "*",
+    "rollup-plugin-node-resolve": "*",
+    "rollup-plugin-replace": "*",
+    "rollup-plugin-uglify": "*"
+  }
+}
